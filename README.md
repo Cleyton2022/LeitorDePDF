@@ -16,5 +16,10 @@ Criar o arquivo composer.json
 Baixar a biblioteca utilizando Composer para ler PDF 
 ### composer require smalot/pdfparser
 
-O leitor funciona automaticamente, é apenas inserir o arquivo que já será executada a leitura e extração de texto dentro do campo.
+Baixar a biblioteca do ilovepdf via composer
+### composer require ilovepdf/ilovepdf-php
+
+
+### OBS:
+ O leitor funciona automaticamente, é apenas inserir o arquivo que já será executada a leitura e extração de texto dentro do campo.
 

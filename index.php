@@ -44,7 +44,6 @@
     </script>
 
     <?php
-
 require 'vendor/autoload.php'; // Carrega o autoload do Composer
 
 function smartAlert($mensagem, $tipo)
