@@ -35,26 +35,26 @@
     </div>
 
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             // Quando o usuário selecionar um arquivo, envie o formulário
-            $('#file-input').change(function () {
+            $('#file-input').change(function() {
                 $('#upload-form').submit();
             });
         });
     </script>
 
     <?php
-require 'vendor/autoload.php'; // Carrega o autoload do Composer
+    require 'vendor/autoload.php'; // Carrega o autoload do Composer
 
-function smartAlert($mensagem, $tipo)
-{
-    // Mapeia o tipo 'danger' para 'error' para usar o ícone correto
-    $tipo = ($tipo === 'danger') ? 'error' : $tipo;
-    
-    // Exibe um alerta usando SweetAlert2
-    echo "<script>Swal.fire({icon: '$tipo', title: '$mensagem', showConfirmButton: false, timer: 2000});</script>";
-    error_log($tipo . ': ' . $mensagem);
-}
+    function smartAlert($mensagem, $tipo)
+    {
+        // Mapeia o tipo 'danger' para 'error' para usar o ícone correto
+        $tipo = ($tipo === 'danger') ? 'error' : $tipo;
+
+        // Exibe um alerta usando SweetAlert2
+        echo "<script>Swal.fire({icon: '$tipo', title: '$mensagem', showConfirmButton: false, timer: 2000});</script>";
+        error_log($tipo . ': ' . $mensagem);
+    }
 
     function processarFormulario()
     {
