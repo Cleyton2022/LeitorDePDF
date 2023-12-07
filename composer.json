@@ -1,0 +1,19 @@
+{
+    "name": "celke/celke",
+    "autoload": {
+        "psr-4": {
+            "Celke\\Celke\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Celke",
+            "email": "cesar@celke.com.br"
+        }
+    ],
+    "require": {
+        "smalot/pdfparser": "^2.7",
+        "ilovepdf/ilovepdf-php": "^1.2",
+        "symfony/process": "^5.4"
+    }
+}
